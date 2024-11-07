@@ -1,0 +1,173 @@
+/* Eléments principaux de la page */
+/* notez la façon d'indiquer un commentaire dans du code css*/
+
+body
+{
+    font-family: Arial, sans-serif; /* fantasy peut-être testé */
+    background-color: #E8E8E8;
+}
+
+#bloc_pge /* pourquoi cela ne fonctionne pas ? */
+{
+    width: 900px;
+    margin: auto;
+}
+
+/* Header */
+
+header
+{
+    margin-top: 10px;
+    height: 160px;
+    border-radius: 10px;
+    /*background-image:radial-gradient(#E8E8E8,#a34fe0);*/
+    /* ligne ci-dessus à tester à la place de celle-ci dessous
+    dé-commenter le code ci-dessus i.e. en supprimant les marques de commentaires
+    et à l'inverse commenter le code ci-dessous en mettant /* et */
+    background-image:radial-gradient(ellipse farthest-corner at 45px 45px , #7710c1 0%, rgba(0, 0, 255, 0) 50%, #ef7446 95%);
+    box-shadow: 0px 6px 6px #1c1a19;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    /*text-shadow: 1px 2px 2px #000000; à tester aussi si vous voulez */
+}
+
+h1 /* on voudrait que ce style ne s'applique qu'aux balises h1 qui sont dans la balise header */
+{
+    font-size: 2.1em;
+    font-weight: normal;
+    margin-bottom: 0px;
+    display: inline-block;
+	color : red;
+}
+
+h2
+{
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+h3 
+{
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+ /* quel sélecteur manque-t-il pour appliquer ce style au logo ? */
+{
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-left: 25px;
+    margin-top: 25px;
+    /* utiliser la proprité width pour réduire la taille de l'image à 15% */
+   }
+
+
+/* Navigation */
+nav
+{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 40px;
+    background-image: url('images/flecheblanchedroite.png');
+    background-repeat: no-repeat;
+    background-position: 0.5 2em;
+    padding-left: 3em;
+    /* border:2px dotted blue; */
+    /* ligne ci-dessus à tester pour voir l'emprise du composant en
+    dé-commentant le code i.e. en supprimant les /* et */
+}
+
+nav a
+{
+    font-size: 0.9em;
+    color: #575457;
+    text-decoration: none;
+    /* border:2px dashed white; */
+    /* ligne ci-dessus à tester pour voir l'emprise du composant en
+    dé-commentant le code i.e. en supprimant les /* et */
+}
+
+nav a:hover
+{
+    color: darkred;
+    border-bottom: 2px solid #C03000;
+}
+
+/* Corps */
+
+article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    box-shadow: 3px 5px 5px #a34fe0;
+    border-radius: 5px;
+    font-size: 0.8em;
+	color: #575457;
+    padding: 8px;
+    margin:0px 10px 0px 10px;
+}
+
+article
+{
+    width: 70%;
+    background-color: #FFFFFF;
+
+}
+
+aside
+{
+    width: 20%;
+    background-color: #FFFFFF;
+
+}
+
+aside a
+{
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+aside a:hover
+{
+    font-weight: bold;
+    border-bottom: 1px solid darkred;
+}
+
+
+/* Footer */
+footer
+{
+    background: url('images/separation.png') repeat-x ;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+footer p
+{
+    font-size: 0.7em;
+    text-align: center;
+
+}
+
+section h1, footer h1, nav a
+{
+    font-weight: bold;
+    text-transform: uppercase;
+}
